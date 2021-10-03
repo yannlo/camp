@@ -1,0 +1,328 @@
+/* general */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fefefe;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* header */
+
+
+header div{
+    min-width: 250px;
+    width: 20%;
+    margin:0 auto;
+}
+
+header
+{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    text-align: right;
+    color: #eee;
+    background-color: #3f37c9;
+    transition: all 0.3s;
+}
+
+header h1{
+    display: inline-block;
+    font-size: 1.6em;
+    width: 100%;
+    height:70px;
+    margin-top: 10px;
+
+}
+
+header h1 span {
+    width: 100%;
+    font-size: 0.8em;
+    display: inline-block;
+    color: #a4b0c5;
+
+}
+
+/* navbar */
+
+nav
+{
+    position:fixed;
+    top: 0;
+    padding-top: 80px;
+    background-color: #3f37c9;
+    width: 250px;
+    padding-left: 50px;
+    left: 0;
+    max-width: 100%;
+    height: 100vh;
+    transition:  0.3s;
+
+}
+
+nav input[type="checkbox"]
+{
+    display: none;
+}
+nav i.fas
+{
+    display: none;
+    border-radius: 0  5px  5px 0;
+    font-size: 30px;
+    position: absolute;
+    top:10px;
+    right: -60px;
+    width: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: #3f37c9;
+    color: #eee;
+}
+
+
+
+@media(max-width: 1250px) {
+    nav{
+        top: 0;
+       left: -300px;
+
+    }
+    nav i.fas
+    {
+        display: inline-block;
+    } 
+}
+
+@media(max-width: 400px) {
+    nav{
+       left: -100%;
+       width: 85%;
+       padding-left: 15%;
+    }
+    nav i.fas
+    {
+        display: inline-block;
+    } 
+}
+
+nav h1{
+    margin-bottom: 20px;
+    color: #eee;
+    font-size:1.6em;
+
+}
+
+nav .ls-primary
+{
+    font-weight:600;
+    list-style:upper-roman;
+    font-size: 1.1em;
+    color: #eee;
+    font-weight:800;
+
+}
+
+nav .ls-primary >li
+{
+    margin-bottom: 20px;
+    
+}
+nav .ls-primary >li>a
+{
+    display: inline-block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color : #ccc;
+}
+
+nav .ls-second {
+    list-style:decimal;
+    padding-left: 30px;
+    font-size: 0.8em;
+    font-weight:800;
+
+}
+
+nav .ls-second >li
+{
+    line-height: 40px;
+}
+
+nav .ls-second >li >a 
+{
+    text-decoration: none;
+    color : #ccc;
+}
+
+nav .ls-primary li a:hover
+{
+    color: #4cc9f0;
+    transition: all 0.4S;
+}
+
+    
+/* go top */
+#go-top
+{
+    background-color:#e1e1e19d;
+    display: inline-block;
+    position: fixed;
+    bottom: 10vh;
+    right: 10%;
+    text-align: center;
+    width: 60px;
+    border-radius: 6px;
+    display: none;
+}
+
+
+#go-top i
+{
+    line-height: 60px;
+    font-size: 40px;
+    color: #4895ef;
+}
+
+@media (max-width: 600px) {
+    #go-top
+    {
+        bottom: 40px;
+        right: 30px;
+        width: 45px;
+    }
+
+    #go-top i
+    {
+        line-height: 45px;
+        font-size: 30px;
+    }
+}
+
+
+/* section */
+section
+{
+    width: 60%;
+    text-align: justify;
+    margin: 0 15% 0 25%;
+}
+
+section h1 
+{
+    text-align: center;
+    font-size: 2em;
+    color: #4361ee;
+    text-decoration: underline;
+}
+
+section h2 
+{
+    margin-top: 30px;
+    font-size: 1.5em;
+    width: 85%;
+    text-align: left;
+    margin-left: 15%; 
+    color: #4895ef;
+    line-height: 50px;
+    text-decoration: underline;
+
+}
+
+#generalite
+{
+    
+    margin-top: 120px;
+}
+
+
+#projet-campagne{
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+#projet-campagne h1{
+    padding-bottom: 30px;
+}
+
+section p
+{
+    line-height: 25px;
+    padding: 0 5px;
+}
+
+@media (max-width: 800px) {
+    section
+    {
+        width: 80%;
+        margin: 100px 10% 0 10%;
+    }
+}
+
+
+@media (max-width: 800px) {
+    section
+    {
+        width: 80%;
+        text-align: justify;
+        margin: 100px 10% 0 10%;
+    }
+}
+section ul{
+    list-style-type: disc;
+    list-style-position:inside;
+    margin:20px 5% 60px;
+}
+
+
+section ul ul{
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+section ul li::marker{
+    font-size: 1.5em;
+    color: #3f37c9;
+}
+
+.lst-tire::marker{
+    content: "- ";
+}
+
+.lst-arrow::marker{
+    
+    content: "➢ ";
+}
+
+
+
+section ul li{
+    line-height:25px;
+    margin-bottom: 20px;    
+}
+
+
+
+/* footer */
+footer
+{
+    text-align: center;
+    width: 100%;
+    height: 25px;
+    background-color: #3a0ca3;
+}
+footer p{
+    line-height: 25px;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #ddd;
+}
